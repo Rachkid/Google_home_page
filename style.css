@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ffffff;
+    color: #202124;
+}
+
+header{
+    width: 100%;
+    max-width: 1100px;
+    position: relative;
+    padding: 36px 20px;
+    text-align: center;
+}
+.haut{
+    display: flex;
+    top: 12px;
+    right: 20px;
+    gap: 14px;
+    position:fixed;
+    z-index: 50;
+    font-size: 14px;
+}
+.haut a{
+    text-decoration: none;
+    color: #5f6368;
+    transition: color 0.2s;
+}
+.haut a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.logo{
+    margin: 30px 0 18px;
+    font-size: 92px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1;
+    font-family: "Product Sans", Arial, sans-serif;
+}
+.logo  .bleu{
+    color: #4285f4;
+}
+.logo .rouge{
+    color: #EA4335;
+}
+.logo .jaune{
+    color:#FBBC05 ;  
+}
+.logo .verte{
+    color:#34A853 ;
+}
+.Recherche{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 18px auto 0;
+    padding: 8px 12px;
+    width:min(640px);
+    border: 1px solid #e6e6e6;
+    border-radius: 24px;
+    box-shadow: 0 1px 6px rgba(32, 33, 36,0.1);
+    background: #fff;
+}
+.Recherche .icon{
+    font-size: 18px;
+    color: #9aa0a6;
+    cursor: pointer;
+    padding: 0 10px;
+}
+.Recherche input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px 6px;
+}
+.bouttons{
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.bouttons button{
+    background: #f2f2f2;
+    border: 1px solid #dadce0;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+.bouttons button:hover{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    background-color: #59d67b;
+}
+.footer{
+    margin-top: 18px;
+    color: #262627;
+    font-size: 14px;
+}
+.footer p{
+    margin: 6px 0;
+
+}
+
+@media(max-width:768px) {
+    .logo{
+        font-size: 56px;
+    }
+    .Recherche{
+        width: 90%;
+        max-width: 600px;
+    }
+    .haut{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.bouttons{
+    display: flex;
+}
+}
+ @media(max-width:320px){
+    .bouttons button{
+    padding: 0;
+    font-size: 14px;
+    display: flex;
+}
+.bouttons {
+    padding: 10px;
+    font-size: 14px;
+    display: flex;
+}
+ }
